@@ -1,0 +1,31 @@
+.footer_wrapper {
+    background-color: #aaeeaa;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_name {
+    background-color: #609160;
+}
+
+.footer_boxs {
+    min-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #609160;
+}
+
+.footer_box {
+    width: 40px;
+    height: 40px;
+    background-color: #9ca89c;
+}
+
+.footer_copyright {
+    background-color: #609160;
+    margin-top: 20px;
+}

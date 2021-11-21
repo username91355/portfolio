@@ -1,0 +1,47 @@
+.projects_wrapper {
+    background-color: #a48ae7;
+}
+
+.projects_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_title {
+    background-color: #d0c2ef;
+    text-align: center;
+}
+
+.projects_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project_wrapper {
+    width: 250px;
+}
+
+.project_img_container {
+    width: 250px;
+    height: 250px;
+    background-color: #c4b3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_link {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    background-color: #dcd6f8;
+}
+
+.project_title {
+    background-color: #655c79;
+}
+
+.project_description {
+    background-color: #7461a6;
+}
