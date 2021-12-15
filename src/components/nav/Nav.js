@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Nav.module.css'
+import styles from './Nav.module.scss'
 
-function Nav(props) {
+const Nav = () => {
     return (
         <div className={styles.nav}>
             <a href="">Main</a>

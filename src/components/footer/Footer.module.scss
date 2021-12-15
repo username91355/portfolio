@@ -1,0 +1,39 @@
+.footer_wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(1, 1, 1, 0.9);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: relative;
+    z-index: 1;
+
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer_name {
+            font-family: "Rubik", sans-serif;
+            font-weight: 500;
+            padding: 1em 0;
+        }
+
+        .footer_boxs {
+            min-width: 350px;
+            display: flex;
+            justify-content: space-between;
+
+            .footer_box {
+                width: 40px;
+                height: 40px;
+                background-color: #9ca89c;
+            }
+        }
+
+        .footer_copyright {
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+

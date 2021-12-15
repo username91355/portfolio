@@ -1,13 +1,15 @@
 import React from 'react';
-import styles from './Skills.module.css'
+import styles from './Skills.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
+import Tilte from "../../common/components/title/Tilte";
+import Skill from "../../common/components/skill/Skill";
 
 function Skills({skills}) {
 
     return (
         <div className={styles.skills_wrapper}>
             <div className={`${styleContainer.container} ${styles.skills_container}`}>
-                <h2 className={styles.skills_title}>My skills</h2>
+                <Tilte title={'My skills'}/>
                 <div className={styles.skills_box}>
                     {
                         skills.map(s => {
@@ -21,18 +23,6 @@ function Skills({skills}) {
             </div>
         </div>
     );
-}
-
-function Skill({icon, title, description}) {
-    return (
-        <div className={styles.skill_wrapper}>
-            <div className={styles.skill_icon}>
-                <img src={icon} alt='skill'/>
-            </div>
-            <h3 className={styles.skill_title}>{title}</h3>
-            <span className={styles.skill_description}>{description}</span>
-        </div>
-    )
 }
 
 export default Skills;

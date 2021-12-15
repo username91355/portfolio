@@ -1,0 +1,50 @@
+@import "src/common/styles/scss/variable";
+
+.main_wrapper {
+  min-height: 100vh;
+  background-color: $bgColor;
+  padding: 180px 0 20px;
+  @media screen and (max-width: 770px) {
+    padding: 100px 20px 20px;
+  }
+
+  .main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+    }
+
+    .main_info {
+      font-size: 1.2em;
+      color: $textColor;
+      width: 300px;
+      text-align: center;
+      padding: 10px 0;
+      @media screen and (max-width: 770px) {
+        font-size: 1em;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 1em;
+        width: 260px;
+        text-align: center;
+      }
+    }
+
+    .main_photo {
+      width: 300px;
+      height: 400px;
+      background-color: grey;
+      @media screen and (max-width: 380px) {
+        width: 260px;
+        height: 360px;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,24 @@
+@import "src/common/styles/scss/variable";
+
+.projects_wrapper {
+  background-color: $bgColor;
+  padding: 100px 0;
+
+  .projects_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 642px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+

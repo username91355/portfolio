@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 function App() {
 
     const user = {
-        fullName: 'Jeffry Arron',
+        fullName: 'Balyaev Dmitriy',
         skills: [
             {
                 id: 1,
@@ -28,7 +28,25 @@ function App() {
                 icon: 'str',
                 title: 'Java Script',
                 description: 'Lorem ipsum dolor sit amet.'
-            }
+            },
+            {
+                id: 4,
+                icon: 'str',
+                title: 'HTML',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            },
+            {
+                id: 5,
+                icon: 'str',
+                title: 'CSS',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            },
+            {
+                id: 6,
+                icon: 'str',
+                title: 'Java Script',
+                description: 'Lorem ipsum dolor sit amet.'
+            },
         ],
         projects: [
             {
@@ -44,7 +62,7 @@ function App() {
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 img: 'img',
                 link: 'link'
-            }
+            },
         ]
     }
 

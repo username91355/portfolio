@@ -1,17 +1,20 @@
 import React from 'react';
-import styles from './Contacts.module.css'
+import styles from './Contacts.module.scss'
+import Tilte from "../../common/components/title/Tilte";
 
 const Contacts = () => {
     return (
         <div className={styles.contacts_wrapper}>
             <div className={styles.contacts_container}>
-                <h2 className={styles.contacts_title}>Contacts</h2>
+                <Tilte title={'Contacts'}/>
                 <form className={styles.contacts_form}
                       action="#">
-                    <input type="text"/>
-                    <input type="text"/>
-                    <textarea cols="30" rows="10"></textarea>
-                    <input type="submit"/>
+                    <input placeholder={'Name *'} type="text"/>
+                    <input placeholder={'Email *'} type="text"/>
+                    <textarea placeholder={'Your message *'}
+                              cols="30"
+                              rows="10"/>
+                    <input className={styles.contacts_button} type="submit"/>
                 </form>
             </div>
         </div>
