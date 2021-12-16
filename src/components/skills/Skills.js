@@ -6,6 +6,7 @@ import Skill from "../../common/components/skill/Skill";
 
 function Skills({skills}) {
 
+
     return (
         <div className={styles.skills_wrapper}>
             <div className={`${styleContainer.container} ${styles.skills_container}`}>
@@ -15,6 +16,7 @@ function Skills({skills}) {
                         skills.map(s => {
                             return <Skill key={s.id}
                                           icon={s.icon}
+                                          iconTagName={s.iconTagName}
                                           title={s.title}
                                           description={s.description}/>
                         })

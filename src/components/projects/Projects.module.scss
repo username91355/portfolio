@@ -11,7 +11,7 @@
 
   .projects_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     @media screen and (max-width: 642px) {
       display: flex;

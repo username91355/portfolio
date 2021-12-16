@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: $bgColor;
   padding: 180px 0 20px;
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 1000px) {
     padding: 100px 20px 20px;
   }
 
@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
     }
 
@@ -34,10 +34,10 @@
     }
 
     .main_photo {
-      width: 300px;
-      height: 400px;
+      height: 640px;
+      width: 480px;
       background-color: grey;
-      @media screen and (max-width: 380px) {
+      @media screen and (max-width: 500px) {
         width: 260px;
         height: 360px;
       }

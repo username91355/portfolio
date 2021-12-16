@@ -1,3 +1,5 @@
+@import "src/common/styles/scss/variable";
+
 .footer_wrapper {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(1, 1, 1, 0.9);
@@ -22,9 +24,11 @@
             justify-content: space-between;
 
             .footer_box {
-                width: 40px;
-                height: 40px;
-                background-color: #9ca89c;
+                text-decoration: none;
+                color: $iconAndSecondaryTextColor;
+                &:hover {
+                    color: $textColor;
+                }
             }
         }
 

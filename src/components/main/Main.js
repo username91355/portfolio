@@ -13,7 +13,6 @@ const Main = ({fullname}) => {
                     <p>Frontend developer</p>
                 </div>
                 <div className={styles.main_photo}>
-
                 </div>
             </div>
         </div>

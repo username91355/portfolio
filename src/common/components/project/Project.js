@@ -1,15 +1,15 @@
 import styles from "./Project.module.scss";
 import React from "react";
+import Link from "../link/Link";
 
-const Project = ({title, description, img, link}) => {
+const Project = ({title, description, img, imgTagName, link}) => {
+
     return (
         <div className={styles.project_wrapper}>
-            <div className={styles.project_img_container}>
-                {/*<img src={img} alt='project'/>*/}
-                <a className={styles.project_link} href={link}>Watch</a>
-            </div>
+            <img className={styles.project_img} src={img[imgTagName]} alt='project'/>
             <h3 className={styles.project_title}>{title}</h3>
             <div className={styles.project_description}>{description}</div>
+            <Link title={`View ${title}`} link={link} linkIcon={true}/>
         </div>
     );
 };

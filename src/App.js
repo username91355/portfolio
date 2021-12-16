@@ -3,8 +3,17 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-import Contacts from "./components/contacts/Contacts";
-import Footer from "./components/footer/Footer";
+import Contacts from './components/contacts/Contacts';
+import Footer from './components/footer/Footer';
+import htmlCssIcon from './assets/img/skills/htmlcss.png';
+import jsIcon from './assets/img/skills/js.png';
+import tsIcon from './assets/img/skills/typescript.png';
+import reactIcon from './assets/img/skills/react.png';
+import reduxIcon from './assets/img/skills/redux.png';
+import gitIcon from './assets/img/skills/git.png';
+import snImg from './assets/img/projects/sn.png';
+import tdlImg from './assets/img/projects/tdl.png';
+import kpImg from './assets/img/projects/kp.jpeg';
 
 function App() {
 
@@ -13,55 +22,71 @@ function App() {
         skills: [
             {
                 id: 1,
-                icon: 'str',
-                title: 'HTML',
+                icon: {htmlCssIcon},
+                iconTagName: 'htmlCssIcon',
+                title: 'HTML/CSS',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 id: 2,
-                icon: 'str',
-                title: 'CSS',
+                icon: {jsIcon},
+                iconTagName: 'jsIcon',
+                title: 'Java Script',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             },
             {
                 id: 3,
-                icon: 'str',
-                title: 'Java Script',
+                icon: {gitIcon},
+                iconTagName: 'gitIcon',
+                title: 'GIT',
                 description: 'Lorem ipsum dolor sit amet.'
             },
             {
                 id: 4,
-                icon: 'str',
-                title: 'HTML',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                icon: {tsIcon},
+                iconTagName: 'tsIcon',
+                title: 'Type Script',
+                description: 'Lorem ipsum dolor sit amet.'
             },
             {
                 id: 5,
-                icon: 'str',
-                title: 'CSS',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                icon: {reactIcon},
+                iconTagName: 'reactIcon',
+                title: 'React',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
             },
             {
                 id: 6,
-                icon: 'str',
-                title: 'Java Script',
-                description: 'Lorem ipsum dolor sit amet.'
+                icon: {reduxIcon},
+                iconTagName: 'reduxIcon',
+                title: 'Redux',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
             },
         ],
         projects: [
             {
                 id: 1,
-                title: 'Counter',
+                title: 'Social Network',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                img: 'img',
-                link: 'link'
+                img: {snImg},
+                imgTagName: 'snImg',
+                link: '#'
             },
             {
                 id: 2,
                 title: 'To do list',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
-                img: 'img',
-                link: 'link'
+                img: {tdlImg},
+                imgTagName: 'tdlImg',
+                link: '#'
+            },
+            {
+                id: 3,
+                title: 'Films library',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
+                img: {kpImg},
+                imgTagName: 'kpImg',
+                link: '#'
             },
         ]
     }

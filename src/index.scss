@@ -13,8 +13,5 @@ body {
   font-weight: 300;
   font-size: medium;
   color: $textColor;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
-  //background-color: $bgColor;
 }
