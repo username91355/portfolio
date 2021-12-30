@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Main.module.scss'
 import styleContainer from './../../common/styles/Container.module.css'
+import avatar from './../../assets/img/i2png.png'
 
 const Main = ({fullname}) => {
 
@@ -12,7 +13,8 @@ const Main = ({fullname}) => {
                     <h1>I am {fullname}</h1>
                     <p>Frontend developer</p>
                 </div>
-                <div className={styles.main_photo}>
+                <div>
+                    <img className={styles.main_photo} src={avatar} alt="avatar"/>
                 </div>
             </div>
         </div>

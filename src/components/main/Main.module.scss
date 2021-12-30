@@ -36,15 +36,14 @@
     .main_photo {
       height: 640px;
       width: 480px;
-      background-color: grey;
-      @media screen and (max-width: 500px) {
+      border-radius: 10%;
+      @media screen and (max-width: 770px) {
         width: 260px;
         height: 360px;
       }
     }
   }
 }
-
 
 
 
