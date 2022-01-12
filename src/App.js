@@ -25,42 +25,48 @@ function App() {
                 icon: {htmlCssIcon},
                 iconTagName: 'htmlCssIcon',
                 title: 'HTML/CSS',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                technology: ['test','test']
             },
             {
                 id: 2,
                 icon: {jsIcon},
                 iconTagName: 'jsIcon',
                 title: 'Java Script',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                technology: []
             },
             {
                 id: 3,
                 icon: {gitIcon},
                 iconTagName: 'gitIcon',
                 title: 'GIT',
-                description: 'Lorem ipsum dolor sit amet.'
+                description: 'Lorem ipsum dolor sit amet.',
+                technology: []
             },
             {
                 id: 4,
                 icon: {tsIcon},
                 iconTagName: 'tsIcon',
                 title: 'Type Script',
-                description: 'Lorem ipsum dolor sit amet.'
+                description: 'Lorem ipsum dolor sit amet.',
+                technology: []
             },
             {
                 id: 5,
                 icon: {reactIcon},
                 iconTagName: 'reactIcon',
                 title: 'React',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                technology: []
             },
             {
                 id: 6,
                 icon: {reduxIcon},
                 iconTagName: 'reduxIcon',
                 title: 'Redux',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                technology: []
             },
         ],
         projects: [

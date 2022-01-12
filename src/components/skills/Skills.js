@@ -16,7 +16,9 @@ function Skills({skills}) {
                                           icon={s.icon}
                                           iconTagName={s.iconTagName}
                                           title={s.title}
-                                          description={s.description}/>
+                                          description={s.description}
+                                          technology={s.technology}
+                            />
                         })
                     }
                 </div>
