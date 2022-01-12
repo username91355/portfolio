@@ -2,15 +2,17 @@
 @import "src/common/styles/scss/mixins.scss";
 
 .skills_wrapper {
-  padding: 20px 0;
+  padding: 60px 0;
   background-color: $bgColor;
 
   .skills_container {
+    padding-top: 0;
     @include container();
     display: flex;
     flex-direction: column;
 
     .skills_box {
+      margin-top: 20px;
       width: 100%;
       display: flex;
       justify-content: space-around;

@@ -4,7 +4,7 @@ import Tilte from "../../common/components/title/Tilte";
 
 const Contacts = () => {
     return (
-        <div className={styles.contacts_wrapper}>
+        <div id={'contacts'} className={styles.contacts_wrapper}>
             <div className={styles.contacts_container}>
                 <Tilte title={'Contacts'}/>
                 <form className={styles.contacts_form}

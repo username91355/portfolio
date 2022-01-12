@@ -1,7 +1,6 @@
 import styles from "./Skill.module.scss";
 import React from "react";
 
-
 const Skill = ({icon, iconTagName, title, description}) => {
 
     return (

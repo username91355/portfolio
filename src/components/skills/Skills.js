@@ -5,9 +5,8 @@ import Skill from "../../common/components/skill/Skill";
 
 function Skills({skills}) {
 
-
     return (
-        <div className={styles.skills_wrapper}>
+        <div id={'skills'} className={styles.skills_wrapper}>
             <div className={styles.skills_container}>
                 <Tilte title={'My skills'}/>
                 <div className={styles.skills_box}>

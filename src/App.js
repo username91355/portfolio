@@ -14,6 +14,7 @@ import gitIcon from './assets/img/skills/git.png';
 import snImg from './assets/img/projects/sn.png';
 import tdlImg from './assets/img/projects/tdl.png';
 
+
 function App() {
 
     const user = {
@@ -84,6 +85,7 @@ function App() {
 
     return (
         <div className="App">
+
             <Header/>
             <Main fullname={user.fullName}/>
             <Skills skills={user.skills}/>

@@ -3,19 +3,21 @@
 
 .projects_wrapper {
   background-color: $bgColor;
-  padding: 100px 0;
+  padding: 60px 0;
 
   .projects_container {
+    padding-top: 0;
     @include container();
     display: flex;
     flex-direction: column;
   }
 
   .projects_box {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    @media screen and (max-width: 642px) {
+    @media screen and (max-width: 800px) {
       display: flex;
       flex-direction: column;
       align-items: center;
