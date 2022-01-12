@@ -9,3 +9,8 @@
     background-size: 100% 2px;
   }
 }
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}

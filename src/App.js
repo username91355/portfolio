@@ -13,7 +13,6 @@ import reduxIcon from './assets/img/skills/redux.png';
 import gitIcon from './assets/img/skills/git.png';
 import snImg from './assets/img/projects/sn.png';
 import tdlImg from './assets/img/projects/tdl.png';
-import kpImg from './assets/img/projects/kp.jpeg';
 
 function App() {
 
@@ -78,14 +77,6 @@ function App() {
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                 img: {tdlImg},
                 imgTagName: 'tdlImg',
-                link: '#'
-            },
-            {
-                id: 3,
-                title: 'Films library',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
-                img: {kpImg},
-                imgTagName: 'kpImg',
                 link: '#'
             },
         ]
