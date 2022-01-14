@@ -27,12 +27,14 @@
     margin: 8px 0;
     font-weight: 400;
     color: $textColor;
+    padding-bottom: 10px;
   }
 
   .skill_description {
     text-align: center;
     font-weight: 300;
     color: $textColor;
+    min-height: 40px;
   }
 
   .skill_technology {
