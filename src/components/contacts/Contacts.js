@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from './Contacts.module.scss'
 import Tilte from "../../common/components/title/Tilte";
+import { Link } from 'react-scroll'
 
 const Contacts = () => {
     const [subject, setSubject] = useState('')
@@ -11,6 +12,7 @@ const Contacts = () => {
         <div id={'contacts'} className={styles.contacts_wrapper}>
             <div className={styles.contacts_container}>
                 <Tilte title={'Contacts'}/>
+                <span>* You can email me or use the links to my contacts in footer (bottom of page)</span>
                 <form className={styles.contacts_form}
                       action={`mailto:balyaevds@gmail.com?subject=${subject} Contact email: ${email}&body=${message}`}
                       method="post">
