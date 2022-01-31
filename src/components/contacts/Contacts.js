@@ -12,7 +12,7 @@ const Contacts = () => {
         <div id={'contacts'} className={styles.contacts_wrapper}>
             <div className={styles.contacts_container}>
                 <Tilte title={'Contacts'}/>
-                <span>* You can email me or use the links to my contacts in footer (bottom of page)</span>
+                <span style={{maxWidth: '80%'}}>* You can email me or use the links to my contacts in footer (bottom of page)</span>
                 <form className={styles.contacts_form}
                       action={`mailto:balyaevds@gmail.com?subject=${subject} Contact email: ${email}&body=${message}`}
                       method="post">

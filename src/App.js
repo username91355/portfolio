@@ -58,7 +58,7 @@ function App() {
                 iconTagName: 'reduxIcon',
                 title: 'Redux',
                 description: 'I used redux as state management with the following packages',
-                technology: ['Redux-thunk','React-redux']
+                technology: ['Redux-thunk','React-redux','Redux-toolkit']
             },
             {
                 id: 6,
@@ -78,8 +78,8 @@ function App() {
                     ' Axios, Jest, Testing-library, React-hook-form, Ant Design.',
                 img: {snImg},
                 imgTagName: 'snImg',
-                link: 'https://username91355.github.io/SocialNetwork/',
-                sourceCodeLink: 'https://github.com/username91355/SocialNetwork'
+                link: 'https://github.com/username91355/social-network',
+                sourceCodeLink: 'https://username91355.github.io/social-network/'
             },
             {
                 id: 2,
