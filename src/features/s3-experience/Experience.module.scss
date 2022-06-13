@@ -1,0 +1,20 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  height: 40vh;
+  width: 100%;
+
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    .experience__content_item {
+      background-color: #439a7c;
+      width: 100%;
+      height: 80px;
+    }
+  }
+}

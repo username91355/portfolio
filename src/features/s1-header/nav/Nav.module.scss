@@ -1,0 +1,37 @@
+@import './src/assets/styles/variabels';
+
+.nav {
+  width: 100%;
+
+  .nav__content {
+    display: flex;
+    align-items: center;
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+
+  .nav__burger_icon {
+    display: none;
+    padding: 16px;
+  }
+
+  .nav__menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+
+    .nav__menu_item {
+      padding: 16px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav__menu {
+      display: none;
+    }
+    .nav__burger_icon {
+      color: $textColor;
+      display: block;
+    }
+  }
+}

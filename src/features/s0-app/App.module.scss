@@ -1,0 +1,22 @@
+@import 'src/assets/styles/variabels';
+@import 'src/assets/styles/mixins';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: $gradientBGColor;
+  width: 100%;
+  @include font(16px, 400);
+
+  .container {
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+}
+

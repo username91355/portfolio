@@ -1,0 +1,15 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  min-height: 80vh;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    max-width: 600px;
+  }
+}

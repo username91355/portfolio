@@ -1,0 +1,8 @@
+@import 'variabels';
+
+@mixin font($size: normal,$weight: normal,$color: $textColor) {
+  font-family:'Open Sans', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color
+}
