@@ -1,0 +1,63 @@
+.skillItem {
+  width: 30%;
+  margin-top: 20px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .skillItem__icon {
+    text-align: center;
+  }
+
+  .skillItem__icon_inside {
+    display: none;
+  }
+
+  .skillItem__content {
+    .skillItem__title {
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  }
+
+  .skillItem__description {
+    text-align: center;
+  }
+
+  .skillItem__technology {
+    padding: 24px;
+    align-items: start;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+
+    .skillItem__icon {
+      display: none;
+    }
+
+    .skillItem__content {
+      display: flex;
+      align-items: center;
+
+      .skillItem__icon_inside {
+        display: block;
+        margin-right: 16px;
+      }
+
+      .skillItem__title {
+        text-align: start;
+      }
+    }
+
+    .skillItem__description {
+      text-align: start;
+    }
+  }
+}

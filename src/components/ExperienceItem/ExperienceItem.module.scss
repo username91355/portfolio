@@ -1,0 +1,52 @@
+.ExperienceItem {
+  display: flex;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 16px;
+  padding: 16px;
+
+  .ExperienceItem__logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .ExperienceItem__info {
+    margin-left: 16px;
+
+    .ExperienceItem__info_name {
+      .ExperienceItem__logo_inside {
+        display: none;
+      }
+
+      .ExperienceItem__info_title {
+        font-size: 1.4rem;
+      }
+    }
+
+    .ExperienceItem__info_description {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .ExperienceItem__logo {
+      display: none;
+    }
+    .ExperienceItem__info {
+      display: flex;
+      flex-direction: column;
+
+      .ExperienceItem__info_name {
+        display: flex;
+        align-items: center;
+
+        .ExperienceItem__logo_inside {
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

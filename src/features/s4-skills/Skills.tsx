@@ -1,17 +1,32 @@
 import React from 'react';
 import styles from './Skills.module.scss';
+import SkillItem from "../../components/SkillItem/SkillItem";
+import H2 from '../../components/H2/H2';
 
-const Skills: React.FC = () => {
+interface IProps {
+	skills: any[]
+}
+
+const Skills: React.FC<IProps> = props => {
+
+	const {
+		skills
+	} = props;
+
 	return (
 		<section className={styles.skills}>
-			<h2>Заголовок</h2>
+			<H2 title={'Навыки'}/>
 			<div className={styles.skills__content}>
-				<div className={styles.skills__content_item}></div>
-				<div className={styles.skills__content_item}></div>
-				<div className={styles.skills__content_item}></div>
-				<div className={styles.skills__content_item}></div>
-				<div className={styles.skills__content_item}></div>
-				<div className={styles.skills__content_item}></div>
+				{skills.map(i => {
+					return <SkillItem
+						key={i.id}
+						id={i.id}
+						icon={i.iconTagName}
+						title={i.title}
+						description={i.description}
+						technology={i.technology}
+					/>
+				})}
 			</div>
 		</section>
 	);

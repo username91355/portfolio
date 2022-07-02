@@ -1,0 +1,22 @@
+@import './src/assets/styles/variabels';
+
+.h2 {
+  position: relative;
+  font-weight: 500;
+  font-size: calc(1.3rem + .8vw);
+  line-height: 1.2;
+  color: $textColor;
+  margin: 0 0 15px;
+  padding-bottom: 15px;
+
+  &:after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 30px);
+    background-image: $gradientColor;
+    background-size: 120% 2px;
+  }
+}
