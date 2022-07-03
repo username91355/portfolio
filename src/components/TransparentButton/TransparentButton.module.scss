@@ -8,6 +8,26 @@
 
   font-size: 1rem;
   padding: 4px 8px;
+
+  svg {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+
+  &.backButton {
+    svg {
+      padding-right: 8px;
+    }
+  }
+
+  &.forwardButton {
+    svg {
+      padding-left: 8px;
+    }
+  }
+
   &:hover {
     color: $colorPrimary;
   }
