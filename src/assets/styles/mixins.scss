@@ -6,3 +6,16 @@
   font-weight: $weight;
   color: $color
 }
+
+@mixin linkBottomLine {
+  text-decoration: none;
+  background-image: $gradientColor;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 2px;
+  transition: background-size .3s;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}

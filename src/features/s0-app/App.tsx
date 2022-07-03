@@ -83,7 +83,7 @@ const App: React.FC = () => {
 					'In this project I used: React, React-router-dom, Redux, TypeScript,' +
 					' Axios, Jest, Testing-library, React-hook-form, Ant Design.',
 
-				imgTagName: 'snImg',
+				imgTagName: 'socialNetwork',
 				link: 'https://github.com/username91355/social-network',
 				sourceCodeLink: 'https://username91355.github.io/social-network/'
 			},
@@ -93,7 +93,7 @@ const App: React.FC = () => {
 				description: 'Easy to handle to-do list written in TypeScript. In this project I used: React, ' +
 					'React-router-dom, Redux, TypeScript, Axios, Jest, Testing-library, React-hook-form, Material UI.',
 
-				imgTagName: 'tdlImg',
+				imgTagName: 'todoList',
 				link: 'https://username91355.github.io/todolist/',
 				sourceCodeLink: 'https://github.com/username91355/todolist'
 			},
@@ -116,7 +116,7 @@ const App: React.FC = () => {
 				<Main/>
 				<Experience experience={user.experience}/>
 				<Skills skills={user.skills}/>
-				<Projects/>
+				<Projects projects={user.projects} count={user.projects.length}/>
 				<Contacts/>
 			</div>
 			<Footer/>

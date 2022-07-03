@@ -1,0 +1,14 @@
+@import "src/assets/styles/variabels";
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $textColor;
+
+  font-size: 1rem;
+  padding: 4px 8px;
+  &:hover {
+    color: $colorPrimary;
+  }
+}

@@ -1,0 +1,24 @@
+@import "src/assets/styles/variabels";
+
+.image {
+  position: relative;
+
+  img {
+    border-radius: 16px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $maskForImages;
+  }
+
+  &:hover::after {
+    background-color: transparent;
+    cursor: pointer;
+  }
+}

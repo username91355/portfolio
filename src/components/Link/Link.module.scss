@@ -1,0 +1,22 @@
+@import "src/assets/styles/variabels";
+@import "src/assets/styles/mixins";
+
+.link_wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  .link_element {
+    text-decoration: none;
+    font-weight: 500;
+    color: $textColor;
+    letter-spacing: 1px;
+    @include linkBottomLine;
+  }
+
+  .link_icon {
+    margin-left: 5px;
+  }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import socialNetwork from './../../assets/images/socialNetwork.png';
 import todoList from './../../assets/images/todoList.png';
+import styles from './Image.module.scss';
 
 interface IProps {
 	name: 'socialNetwork' | 'todoList'
-	alt: string,
-	width?: string
-	height?: string
+	alt: string
+	customClass?: string
 }
 
 const Image: React.FC<IProps> = props => {
@@ -14,20 +14,14 @@ const Image: React.FC<IProps> = props => {
 	const {
 		name,
 		alt,
-		width = '100%',
-		height = 'auto',
+		customClass
 	} = props;
-
-	const size = {
-		width,
-		height
-	}
 
 	switch (name) {
 		case 'socialNetwork':
-			return <img style={size} src={socialNetwork} alt={alt}/>;
+			return <div className={styles.image}><img className={customClass} src={socialNetwork} alt={alt}/></div>;
 		case 'todoList':
-			return <img style={size} src={todoList} alt={alt}/>;
+			return <div className={styles.image}><img className={customClass} src={todoList} alt={alt}/></div>;
 		default:
 			return <></>;
 	}

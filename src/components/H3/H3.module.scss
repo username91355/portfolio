@@ -1,0 +1,12 @@
+@import './src/assets/styles/variabels';
+
+.h3 {
+  display: inline-block;
+  font-weight: 500;
+  font-size: calc(1rem + .8vw);
+  line-height: 1.1;
+  color: $textColor;
+  margin: 0 0 15px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid $colorPrimary;
+}
