@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Nav.module.scss';
 import {FaBars} from 'react-icons/fa';
 
-const Nav = () => {
+const Nav: React.FC = () => {
 	return (
 		<nav className={styles.nav}>
 			<div className={styles.nav__content}>

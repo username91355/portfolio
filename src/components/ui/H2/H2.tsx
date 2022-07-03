@@ -5,7 +5,8 @@ interface IProps {
 	title: string
 }
 
-const H2: React.FC<IProps> = ({title}) => {
+const H2: React.FC<IProps> = props => {
+	const {title} = props;
 	return <h2 className={styles.h2}>{title}</h2>;
 };
 

@@ -9,9 +9,7 @@ interface IProps {
 
 const Icon: React.FC<IProps> = props => {
 
-	const {
-		type,
-	} = props;
+	const {type} = props;
 
 	switch (type) {
 		case 'web':

@@ -1,21 +1,22 @@
 import React from 'react';
 import styles from './ProjectItem.module.scss';
-import Image from '../Image/Image';
+import Image from '../ui/Image/Image';
 import cn from 'classnames';
-import H3 from "../H3/H3";
-import Link from "../Link/Link";
+import H3 from "../ui/H3/H3";
+import Link from "../ui/Link/Link";
+import {IProject} from "../../types";
 
 interface IProps {
 	id: number
 	activeItemId: number
-	item: any
+	project: IProject
 }
 
 const ProjectItem: React.FC<IProps> = props => {
 
 	const {
 		id,
-		item,
+		project,
 		activeItemId
 	} = props;
 
@@ -24,13 +25,13 @@ const ProjectItem: React.FC<IProps> = props => {
 			[styles.active]: id === activeItemId
 		})}>
 			<div className={styles.projects__slider_imageArea}>
-				<Image customClass={styles.projects__slider_image} name={item.imgTagName} alt={item.imgTagName}/>
+				<Image customClass={styles.projects__slider_image} name={project.imgTagName} alt={project.imgTagName}/>
 			</div>
 			<div className={styles.projects__slider_descriptionArea}>
-				<H3 title={item.title}/>
-				<p>{item.description}</p>
-				<Link title={'Ссылка на проект'} link={item.link} linkIcon={true}/>
-				<Link title={'Ссылка на исходный код проета'} link={item.sourceCodeLink} linkIcon={true}/>
+				<H3 title={project.title}/>
+				<p>{project.description}</p>
+				<Link title={'Ссылка на проект'} link={project.link} linkIcon={true}/>
+				<Link title={'Ссылка на исходный код проета'} link={project.sourceCodeLink} linkIcon={true}/>
 			</div>
 		</div>
 	);

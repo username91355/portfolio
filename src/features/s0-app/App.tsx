@@ -8,10 +8,13 @@ import Projects from '../s5-projects/Projects';
 import Contacts from '../s6-contacts/Contacts';
 import Footer from '../s7-footer/Footer';
 import welbex from './../../assets/images/welbex.png';
+import avatar from './../../assets/images/avatar.png';
+import {IUser} from '../../types';
 
 const App: React.FC = () => {
-	const user = {
+	const user: IUser = {
 		fullName: 'Balyaev Dmitriy',
+		avatar: avatar,
 		skills: [
 			{
 				id: 1,
@@ -113,7 +116,7 @@ const App: React.FC = () => {
 		<div className={styles.app}>
 			<Header/>
 			<div className={styles.container}>
-				<Main/>
+				<Main fullName={user.fullName} avatar={user.avatar}/>
 				<Experience experience={user.experience}/>
 				<Skills skills={user.skills}/>
 				<Projects projects={user.projects} count={user.projects.length}/>

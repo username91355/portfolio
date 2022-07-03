@@ -1,6 +1,6 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import styles from './SkillItem.module.scss';
-import Icon from "../Icon/Icon";
+import Icon from "../ui/Icon/Icon";
 
 interface IProps {
 	id: number
@@ -31,8 +31,8 @@ const SkillItem: React.FC<IProps> = props => {
 				<h3 className={styles.skillItem__title}>{title}</h3>
 			</div>
 			<p className={styles.skillItem__description}>{description}</p>
-			<ul  className={styles.skillItem__technology}>
-				{technology.map( i => {
+			<ul className={styles.skillItem__technology}>
+				{technology.map(i => {
 					return <li>
 						{i}
 					</li>

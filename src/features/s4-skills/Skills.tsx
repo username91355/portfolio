@@ -1,17 +1,16 @@
 import React from 'react';
 import styles from './Skills.module.scss';
-import SkillItem from "../../components/SkillItem/SkillItem";
-import H2 from '../../components/H2/H2';
+import SkillItem from '../../components/SkillItem/SkillItem';
+import H2 from '../../components/ui/H2/H2';
+import { ISkill } from '../../types';
 
 interface IProps {
-	skills: any[]
+	skills: ISkill[]
 }
 
 const Skills: React.FC<IProps> = props => {
 
-	const {
-		skills
-	} = props;
+	const {skills} = props;
 
 	return (
 		<section className={styles.skills}>

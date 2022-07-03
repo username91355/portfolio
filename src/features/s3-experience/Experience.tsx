@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Experience.module.scss';
-import ExperienceItem from "../../components/ExperienceItem/ExperienceItem";
-import H2 from '../../components/H2/H2';
+import H2 from '../../components/ui/H2/H2';
+import ExperienceItem from '../../components/ExperienceItem/ExperienceItem';
+import {IExperienceItem} from '../../types';
 
 interface IProps {
-	experience: any[]
+	experience: IExperienceItem[]
 }
 
 const Experience: React.FC<IProps> = props => {

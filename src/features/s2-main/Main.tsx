@@ -1,15 +1,25 @@
 import React from 'react';
 import styles from './Main.module.scss';
-import avatar from './../../assets/images/i2png.png';
 import ReactTypingEffect from 'react-typing-effect';
 import {FaLinkedin, FaTelegram, FaWhatsapp} from 'react-icons/fa';
 
-const Main: React.FC = () => {
+interface IProps {
+	fullName: string
+	avatar: string
+}
+
+const Main: React.FC<IProps> = props => {
+
+	const {
+		fullName,
+		avatar
+	} = props;
+
 	return (
 		<section className={styles.main}>
 			<article className={styles.main__header}>
 				<h1 className={styles.main__header_text}>
-					Balyaev Dmitriy
+					{fullName}
 				</h1>
 				<ReactTypingEffect
 					className={styles.main__header_typing}

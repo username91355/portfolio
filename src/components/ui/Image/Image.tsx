@@ -1,6 +1,6 @@
 import React from 'react';
-import socialNetwork from './../../assets/images/socialNetwork.png';
-import todoList from './../../assets/images/todoList.png';
+import socialNetwork from '../../../assets/images/socialNetwork.png';
+import todoList from '../../../assets/images/todoList.png';
 import styles from './Image.module.scss';
 
 interface IProps {

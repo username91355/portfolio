@@ -1,20 +1,18 @@
 import React, {useState} from 'react';
 import styles from './Projects.module.scss';
-import H2 from '../../components/H2/H2';
+import H2 from '../../components/ui/H2/H2';
 import ProjectItem from '../../components/ProjectItem/ProjectItem';
 import TransparentButton from '../../components/TransparentButton/TransparentButton';
+import {IProject} from '../../types';
 
 interface IProps {
-	projects: any[]
+	projects: IProject[]
 	count: number
 }
 
 const Projects: React.FC<IProps> = props => {
 
-	const {
-		projects,
-		count
-	} = props;
+	const {projects, count} = props;
 
 	const [activeItemId, setActiveItemId] = useState<number>(1);
 
