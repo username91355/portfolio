@@ -38,7 +38,7 @@ const Projects: React.FC<IProps> = props => {
 			<div className={styles.projects__slider}>
 				<TransparentButton direction={'back'} onClick={prevSlide}/>
 				{projects.map(i => {
-					return <ProjectItem key={i.id} id={i.id} activeItemId={activeItemId} item={i}/>;
+					return <ProjectItem key={i.id} id={i.id} activeItemId={activeItemId} project={i}/>;
 				})}
 				<TransparentButton direction={'forward'} onClick={nextSlide}/>
 			</div>
